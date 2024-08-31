@@ -155,10 +155,6 @@ We welcome contributions from the community! Whether you want to add support for
 
 To get started, fork the repository and submit a pull request. Please include tests for any new functionality or significant changes.
 
-## License
-
-APIMiner is licensed under the MIT License. This means you can freely use, modify, and distribute this software under the terms of the license. See the [LICENSE](LICENSE) file for more details.
-
 ## Acknowledgments
 
 Special thanks to the open-source community for providing the tools and libraries that made this project possible. Your contributions to the ecosystem inspire projects like APIMiner.
