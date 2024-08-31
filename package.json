@@ -1,0 +1,56 @@
+{
+  "name": "apiminer",
+  "version": "1.0.0-beta.1",
+  "description": "Automatically generate Postman collections from your frontend codebase.",
+  "author": "Munaf A. Mahdi <url:munafio.com>",
+  "license": "MIT",
+  "keywords": [
+    "postman",
+    "api",
+    "collection",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/munafio/apiminer.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx,json,md}'",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "bin": {
+    "apiminer": "dist/index.js"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.16.0",
+    "@babel/traverse": "^7.16.0",
+    "@babel/types": "^7.16.0",
+    "axios": "^1.7.6",
+    "commander": "^12.1.0",
+    "kleur": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.1",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  }
+}
