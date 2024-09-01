@@ -153,7 +153,11 @@ The tests are written using Jest and validate the core functionality of APIMiner
 
 We welcome contributions from the community! Whether you want to add support for another frontend HTTP library, improve the documentation, or fix a bug, your contributions are appreciated.
 
-To get started, fork the repository and submit a pull request. Please include tests for any new functionality or significant changes.
+#### To get started
+
+fork the repository and submit a pull request. Please include tests for any new functionality or significant changes.
+
+Do not forget to run `npm run prepare` before making/pushing any changes.
 
 ## Acknowledgments
 
