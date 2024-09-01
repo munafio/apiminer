@@ -14,7 +14,7 @@ export function extractGotCall(
   exportedFunction: any
 ): { method: string; url: string; body: any } {
   let method = 'GET';
-  let url = extractUrl(node.arguments[0]);
+  const url = extractUrl(node.arguments[0]);
   let body: any = null;
   if (node.arguments[1] && t.isObjectExpression(node.arguments[1])) {
     const methodProp: any = node.arguments[1].properties.find(

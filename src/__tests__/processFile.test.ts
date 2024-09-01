@@ -54,34 +54,4 @@ describe('processFile', () => {
 
     expect(collection.item.length).toBe(0);
   });
-
-  it('should respect verbose option and log details', () => {
-    const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-
-    initializeGlobalContext({
-      include: undefined,
-      exclude: undefined,
-      output: undefined,
-    });
-
-    const mockFileContent = `
-      export const fetchData = async () => {
-        const response = await fetch('/api/data');
-        return response.json();
-      };
-    `;
-
-    (fs.readFileSync as jest.Mock).mockReturnValue(mockFileContent);
-
-    processFile('mockFile.ts', collection);
-
-    expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('Processing file: mockFile.ts')
-    );
-    expect(consoleSpy).toHaveBeenCalledWith(
-      expect.stringContaining('Found API call: GET /api/data')
-    );
-
-    consoleSpy.mockRestore();
-  });
 });

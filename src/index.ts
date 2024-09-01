@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import path from 'path';
 import fs from 'fs';
 import { generatePostmanCollection } from './generatePostmanCollection';
-import { globalContext, initializeGlobalContext } from './context/global';
+import { initializeGlobalContext } from './context/global';
 
 const program = new Command();
 
@@ -40,7 +40,6 @@ program
 
     console.log(`Generating Postman collection for: ${appDirectory}`);
 
-    // Determine the output path
     const outputPath = options.output
       ? path.resolve(options.output)
       : path.join(process.cwd(), 'postman_collection.json');

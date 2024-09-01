@@ -5,13 +5,13 @@ esbuild
     entryPoints: ['./src/index.ts'],
     bundle: true,
     outdir: './dist',
-    format: 'esm', // Ensure the output is an ES module
-    platform: 'node', // Target Node.js environment
-    target: ['esnext'], // Use the latest ES features
-    sourcemap: true, // Generate source maps
-    minify: false, // Avoid minification for debugging purposes
-    loader: { '.ts': 'ts' }, // Handle TypeScript files
-    outExtension: { '.js': '.js' }, // Ensure .js extension is used
+    format: 'esm',
+    platform: 'node',
+    target: ['esnext'],
+    sourcemap: true,
+    minify: true,
+    loader: { '.ts': 'ts' },
+    outExtension: { '.js': '.js' },
     external: [
       '@babel/traverse',
       '@babel/parser',

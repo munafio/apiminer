@@ -1,4 +1,4 @@
-import { isFetchCall, extractFetchCall } from "./fetchExtractor";
+import { isFetchCall, extractFetchCall } from './fetchExtractor';
 
 export function isNodeFetchCall(node: any): boolean {
   return isFetchCall(node);
