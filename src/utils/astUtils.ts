@@ -227,6 +227,11 @@ export function addRequestToCollection(
     request.request.body = {
       mode: 'raw',
       raw: JSON.stringify(body, null, 2),
+      options: {
+        raw: {
+          language: 'json',
+        },
+      },
     };
   }
 
