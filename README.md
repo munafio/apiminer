@@ -19,10 +19,7 @@
 **APIMiner** is a powerful tool designed to automatically extract API calls from your frontend JavaScript or TypeScript codebase and generate Postman collections with minimal effort. Ideal for frontend developers, APIMiner helps you document and test the API interactions within your client-side applications, ensuring that your API usage is transparent and well-organized.
 
 <p align="center">
-  <video autoplay muted loop style="width:80%;border-radius:10px;" playsinline>
-    <source src="/_assets/demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="/_assets/demo.gif" alt="APIMiner demo" width="600"/>
 </p>
 
 ## Support the Project ⭐
