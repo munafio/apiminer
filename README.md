@@ -1,8 +1,20 @@
-# APIMiner
-
-![npm](https://img.shields.io/npm/v/apiminer?label=npm%20version)
-![npm](https://img.shields.io/npm/l/apiminer)
-![GitHub stars](https://img.shields.io/github/stars/munafio/apiminer?style=social)
+<p align="center">
+  <img src="/_assets/logo.png" alt="APIMiner Logo" width="200"/>
+</p>
+<p align="center">
+  <a href="https://www.npmjs.org/package/apiminer">
+    <img src="https://img.shields.io/npm/v/apiminer.svg?style=flat-square">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/npm/l/apiminer?style=flat-square">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" />
+  </a>
+  <a href="https://www.npmjs.org/package/apiminer">
+    <img src="http://img.shields.io/npm/dm/apiminer.svg?style=flat-square">
+  </a>
+</p>
 
 **APIMiner** is a powerful tool designed to automatically extract API calls from your frontend JavaScript or TypeScript codebase and generate Postman collections with minimal effort. Ideal for frontend developers, APIMiner helps you document and test the API interactions within your client-side applications, ensuring that your API usage is transparent and well-organized.
 
